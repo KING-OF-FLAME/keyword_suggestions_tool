@@ -1,7 +1,7 @@
 ## Keyword Suggestions Tool
 
 <p align="center">
-  <img src="LINK_TO_YOUR_LOGO_IMAGE">
+  <img src="https://i.ibb.co/RDcvHJL/DALL-E-2023-12-30-10-47-06-Design-a-professional-logo-for-an-Auto-Keyword-Suggestion-Tool-including.png">
 </p>
 
 [![Repo Size](https://img.shields.io/github/repo-size/KING-OF-FLAME/keyword_suggestions_tool?style=flat-square&color=orange)](https://github.com/KING-OF-FLAME/keyword_suggestions_tool)
