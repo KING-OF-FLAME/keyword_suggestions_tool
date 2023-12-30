@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Suggestions</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1 style="color: #000000;">Keyword Suggestions</h1>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="input-group">
+                <label for="keyword">Enter a Keyword:</label>
+                <input type="text" id="keyword" placeholder="Type a keyword...">
+            </div>
+
+            <button id="submit">Get Suggestions</button>
+            <div id="loading" class="hidden">Loading...</div>
+
+            <!-- Suggestions will be displayed here -->
+            <div id="suggestions">
+                <div class="suggestions-box">
+                    <h3>Google Suggestions <span class="copy-icon" id="copyGoogle" data-type="google_suggestions">📋</span></h3>
+                    <div id="google_suggestions" class="suggestions-scrollable"></div>
+                </div>
+                
+                <div class="suggestions-box">
+                    <h3>YouTube Suggestions <span class="copy-icon" id="copyYouTube" data-type="youtube_suggestions">📋</span></h3>
+                    <div id="youtube_suggestions" class="suggestions-scrollable"></div>
+                </div>
+
+                <div class="suggestions-box">
+                    <h3>Common Suggestions <span class="copy-icon" id="copyCommon" data-type="common_keywords">📋</span></h3>
+                    <div id="common_suggestions" class="suggestions-scrollable"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Google Auto Suggestions Tool</p>
+        <p>Developed By <a href="https://instagram.com/yash.developer" target="_blank">@yash.developer | IG</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

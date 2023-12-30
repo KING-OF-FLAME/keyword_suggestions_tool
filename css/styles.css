@@ -1,0 +1,102 @@
+body, h1, button, label {
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* yaha user input ke liye style hai */
+.content input[type="text"], .content input[type="email"], .content input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#loading {
+    display: none;
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* yaha scrollable suggestions boxes ke liye style hai*/
+.suggestions-box {
+    border: 1px solid #ddd;
+    padding-top: 40px; /* Space for sticky header */
+    margin-top: 10px;
+    position: relative;
+}
+
+.suggestions-box h3 {
+    position: sticky;
+    top: 0;
+    background-color: #e0e0e0; /* Grey background for sticky header */
+    padding: 10px;
+    margin-top: 0;
+    z-index: 10; /* Ensure it stays on top */
+}
+
+.suggestions-scrollable {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/*  yaha copy buttons inside scrollable suggestions boxes ke liye Styling*/
+.suggestions-box .copy-icon {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute; /* Position the copy button */
+    right: 10px; /* Adjust the right spacing */
+    top: 10px; /* Adjust the top spacing */
+    z-index: 15; /* Ensure it stays on top */
+}
+
+.suggestions-box .copy-icon:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+/* yaha Adjust kr sakte ho spacing between sections */
+#google_suggestions, #youtube_suggestions, #common_suggestions {
+    margin-bottom: 20px;
+}
