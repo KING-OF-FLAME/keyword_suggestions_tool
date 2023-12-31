@@ -69,11 +69,6 @@ Instagram: [yash.developer](https://instagram.com/yash.developer)
 
 -------------------------------------------------
 
-## License 📍
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
--------------------------------------------------
 
 ## Acknowledgments 📍
 
