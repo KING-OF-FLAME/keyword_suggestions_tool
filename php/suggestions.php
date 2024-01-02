@@ -41,9 +41,21 @@ function parseSuggestions($jsonData) {
     return $suggestions;
 }
 
-// Handle both GET and POST requests
-$query = isset($_REQUEST["keyword"]) ? $_REQUEST["keyword"] : '';
-$limit = isset($_REQUEST["limit"]) ? intval($_REQUEST["limit"]) : 10;
+// Handle both path and query parameters
+$pathParams = explode('/', $_SERVER['REQUEST_URI']);
+$queryParams = $_GET;
+
+if (count($pathParams) >= 4) {
+    // Path parameter found (e.g., /php/suggestions.php/hello)
+    $query = $pathParams[3];
+} elseif (isset($queryParams["keyword"])) {
+    // Query parameter found (e.g., /php/suggestions.php?keyword=hello)
+    $query = $queryParams["keyword"];
+} else {
+    $query = '';
+}
+
+$limit = isset($queryParams["limit"]) ? intval($queryParams["limit"]) : 10;
 
 // Inside your PHP script, log the received keyword
 error_log("Request received with keyword: " . $query);
